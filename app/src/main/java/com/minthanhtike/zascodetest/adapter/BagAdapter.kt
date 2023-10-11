@@ -61,7 +61,7 @@ class BagAdapter(private val itemsViewModel: ItemsViewModel,private val context:
                 holder.priceTv.text=(itemsList[position].price*amount.toDouble()).toHalf().toString()
                 val currentPrice=DecimalFormat(".00").format(itemsList[position].price*amount)
                 holder.priceTv.text=(currentPrice).toString()
-                Toast.makeText(context,"-1 kg",Toast.LENGTH_SHORT).show()
+
             }
         }
     }
