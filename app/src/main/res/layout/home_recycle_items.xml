@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home_item_img"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <TextView
+                android:id="@+id/vgt_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_item_img"
+                android:text="Brocolli"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textStyle="bold"
+                style="@style/dollarTv"/>
+            <TextView
+                android:id="@+id/type_vgt_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vgt_name_tv"
+                android:text="Fresh Fruits"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                style="@style/TextAppearance.Material3.LabelLarge"
+                android:textColor="@color/darker_grey" />
+            <TextView
+                android:id="@+id/dollar_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textStyle="bold"
+                android:layout_below="@id/type_vgt_tv"
+                style="@style/TitleText"
+                android:paddingStart="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                />
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type_vgt_tv"
+                android:layout_toLeftOf="@id/add_img_btn"
+                android:layout_toRightOf="@id/dollar_home"
+                android:text="15.36"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textStyle="bold"
+                style="@style/TitleText" />
+            <ImageButton
+                android:elevation="20dp"
+                android:outlineSpotShadowColor="@android:color/transparent"
+                android:id="@+id/add_img_btn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/type_vgt_tv"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/shaping"
+                android:src="@drawable/add"
+                android:layout_marginEnd="10dp"/>
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>
